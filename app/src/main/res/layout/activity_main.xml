@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/green_bg"
+tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="The Notorious"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_mcGregor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Conor McGregor"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_below="@id/tv"
+        android:gravity="center">
+    </TextView>
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/tv_mcGregor"/>
+
+<GridView
+    android:layout_below="@id/view_line"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:columnWidth="100dp"
+    android:layout_marginTop="15dp"
+    android:stretchMode="columnWidth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/grid" />
+
+</RelativeLayout>
